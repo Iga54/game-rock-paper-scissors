@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game - rock, paper, scissors</title>
+    <style>
+      body {
+        background-color: beige;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      button {
+        font-size: 25px;
+        height: 40px;
+        background-color: rgb(238, 188, 102);
+        color: black;
+        border-radius: 10%;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 2);
+        margin-top: 10px;
+      }
+      .btn-container {
+        display: flex;
+        justify-content: center;
+      }
+      button:hover {
+        background-color: black;
+        color: antiquewhite;
+      }
+      .select {
+        overflow: hidden;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .select img {
+        border-radius: 10%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+        width: 200px;
+        margin: 20px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .left-side,
+      .right-side {
+        display: inline-block;
+        width: 48%;
+        overflow: hidden;
+        margin: 40px auto 0;
+        text-align: center;
+      }
+
+      span {
+        font-weight: bold;
+      }
+      .container {
+        display: flex;
+        align-items: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Game - rock, paper, scissors</h1>
+    <div class="select">
+      <h2>Select option:</h2>
+      <img data-option="paper" src="paper.png" alt="" />
+      <img data-option="rock" src="rock.PNG" alt="" />
+      <img data-option="scissors" src="scissors.PNG" alt="" />
+    </div>
+    <div class="btn-container">
+      <button class="start">PLAY</button>
+    </div>
+    <div class="container">
+      <div class="left-side">
+        <h2>Game results:</h2>
+        <p>Your choice: <span data-summary="your-choice"></span></p>
+        <p>AI- choice: <span data-summary="ai-choice"></span></p>
+        <p>The winner: <span data-summary="winner"></span></p>
+      </div>
+      <div class="right-side">
+        <h2>Actual results:</h2>
+        <p class="numbers">Number of games: <span>0</span></p>
+        <p class="wins">Number of wins: <span>0</span></p>
+        <p class="losses">Number of losses: <span>0</span></p>
+        <p class="draws">Number of draws: <span>0</span></p>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
