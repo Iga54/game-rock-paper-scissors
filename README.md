@@ -4,4 +4,4 @@ This is a known game - rock, paper, scissors built with JavaScript and CSS. The 
 
 The game is lightweight, fun, and provides a great example of combining JavaScript for interactivity with CSS for styling.
 
-![image of the game](game-rock-paper-scissors/gamescreen.png)
+![image of the game](gamescreen.png)
